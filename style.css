@@ -1,6 +1,7 @@
  .welcom{
  border-radius: 3px;
   border-width: 0;
+  color: gray;
   
    
  }
@@ -8,7 +9,6 @@
  border-radius: 3px;
   border-width: 0;
  color: red;
-  
 }
 
 
