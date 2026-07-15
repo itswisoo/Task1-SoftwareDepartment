@@ -1,14 +1,392 @@
- .welcom{
- border-radius: 3px;
-  border-width: 0;
-  color: gray;
-  
-   
- }
-.under {
- border-radius: 3px;
-  border-width: 0;
- color: red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Oswald", sans-serif;
+    background: linear-gradient(135deg, #f8f6ff, #ede5ff, #ffffff);
+    color: #333;
+    overflow-x: hidden;
+
 }
 
 
+.left {
+
+    padding: 70px 70px 40px;
+
+}
+
+.welcom {
+
+    display: inline-block;
+
+    background: rgba(255, 255, 255, .7);
+
+    backdrop-filter: blur(12px);
+
+    padding: 18px 35px;
+
+    border-radius: 40px;
+
+    color: #7B2CBF;
+
+    font-size: 30px;
+
+    border: 1px solid rgba(157, 78, 221, .2);
+
+    box-shadow: 0 15px 35px rgba(157, 78, 221, .12);
+
+    transition: .4s;
+
+}
+
+.welcom:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.wasan {
+
+    margin-top: 25px;
+
+    font-size: 60px;
+
+    color: #3b2d58;
+
+    letter-spacing: 1px;
+
+}
+
+.web {
+
+    margin-top: 12px;
+
+    font-size: 24px;
+
+    color: #8F5BD6;
+
+}
+
+.CS {
+
+    margin-top: 18px;
+
+    width: 560px;
+
+    color: #666;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+
+}
+
+
+.socail {
+
+    display: flex;
+
+    gap: 18px;
+
+    margin-top: 35px;
+
+}
+
+.a {
+
+    width: 65px;
+
+    height: 65px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+
+    transition: .35s;
+
+    cursor: pointer;
+
+}
+
+.a img {
+
+    width: 40px;
+
+    transition: .35s;
+
+}
+
+.a:hover {
+
+    transform: translateY(-10px) rotate(-5deg);
+
+    background: #9D4EDD;
+
+}
+
+.a:hover img {
+
+    filter: brightness(0) invert(1);
+
+}
+
+
+
+.coder {
+
+    position: absolute;
+
+    right: 70px;
+
+    top: 60px;
+
+}
+
+.coder img {
+
+    width: 470px;
+
+    border-radius: 40px;
+
+    box-shadow:
+
+        0 30px 60px rgba(0, 0, 0, .12),
+
+        0 0 35px rgba(157, 78, 221, .18);
+
+    transition: .45s;
+
+}
+
+.coder img:hover {
+
+    transform: scale(1.04) rotate(-2deg);
+
+}
+
+/*========== Sections ==========*/
+
+.con {
+
+    display: flex;
+
+    gap: 30px;
+
+    margin: 70px;
+
+}
+
+.AboutMe {
+
+    width: 330px;
+
+    padding: 25px;
+
+    background: rgba(255, 255, 255, .75);
+
+    backdrop-filter: blur(12px);
+
+    border-radius: 30px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+
+}
+
+.AboutMe h3 {
+
+    color: #7B2CBF;
+
+    margin-bottom: 18px;
+
+}
+
+.who {
+
+    color: #666;
+
+    line-height: 1.8;
+
+}
+
+.skills {
+
+    flex: 1;
+
+    padding: 25px;
+
+    background: rgba(255, 255, 255, .75);
+
+    backdrop-filter: blur(12px);
+
+    border-radius: 30px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+
+}
+
+.skills h3 {
+
+    color: #7B2CBF;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.cards {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 22px;
+
+}
+
+.card {
+
+    width: 120px;
+
+    padding: 20px;
+
+    border-radius: 24px;
+
+    background: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+
+    transition: .35s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-12px);
+
+    box-shadow: 0 20px 40px rgba(157, 78, 221, .2);
+
+}
+
+.card img {
+
+    width: 75px;
+
+    height: 75px;
+
+    object-fit: contain;
+
+    transition: .35s;
+
+}
+
+.card:hover img {
+
+    transform: scale(1.15) rotate(-6deg);
+
+}
+
+.card p {
+
+    margin-top: 12px;
+
+    color: #444;
+
+    font-size: 17px;
+
+}
+
+/*========== Contact ==========*/
+
+hr {
+
+    width: 90%;
+
+    margin: 10px auto 35px;
+
+    border: none;
+
+    height: 1px;
+
+    background: #d8c5f3;
+
+}
+
+.com {
+
+    margin-left: 70px;
+
+    margin-bottom: 50px;
+
+}
+
+#com h3 {
+
+    color: #7B2CBF;
+
+    margin-bottom: 12px;
+
+}
+
+#com p {
+
+    color: #555;
+
+    margin-top: 10px;
+
+}
+
+/* Animation */
+
+.welcom,
+.wasan,
+.web,
+.CS,
+.coder img,
+.AboutMe,
+.skills {
+
+    animation: fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
